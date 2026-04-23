@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diffuser — Aero · Formula Student</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../theme.css">
+  <link rel="stylesheet" href="../aero.css">
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <span class="nav-logo">Your Name</span>
+      <div class="nav-links">
+        <a href="../index.html">← Aero Overview</a>
+        <a href="#">Portfolio</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="container">
+      <p class="breadcrumb fade-in"><a href="#">Portfolio</a> / <a href="../index.html">Aerodynamics</a> / Diffuser</p>
+      <h1 class="hero-title fade-in">Undertray &<br><em>Diffuser</em></h1>
+      <p class="hero-desc fade-in">
+        Describe the ground effect strategy — how the undertray accelerates flow under the car
+        and the diffuser recovers pressure to generate suction. Include the ride height sensitivity
+        and how it was managed.
+      </p>
+      <div class="hero-image fade-in">
+        <!-- <img src="../images/diffuser-hero.jpg" alt="Diffuser"> -->
+        <span class="placeholder-label">Diffuser — Hero Image / Render</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="stats-bar fade-in">
+      <div class="stat"><div class="stat-value">−0.00</div><div class="stat-label">Lift Coeff. (Cl)</div></div>
+      <div class="stat"><div class="stat-value">0.00</div><div class="stat-label">Drag Coeff. (Cd)</div></div>
+      <div class="stat"><div class="stat-value">0°</div><div class="stat-label">Expansion Angle</div></div>
+      <div class="stat"><div class="stat-value">00 mm</div><div class="stat-label">Ride Height</div></div>
+    </div>
+  </div>
+
+  <section id="details">
+    <div class="container">
+      <div class="section-heading fade-in"><h2>Design Details</h2></div>
+    </div>
+    <div class="container" style="padding-left:0;padding-right:0;max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:1.5px;">
+
+      <div class="detail-block fade-in">
+        <div class="detail-img"><span class="placeholder-label">Undertray</span></div>
+        <div class="detail-info">
+          <span class="detail-tag">Ground Effect</span>
+          <h3 class="detail-title">Flat-Bottom Undertray</h3>
+          <p class="detail-desc">Describe the undertray geometry — how it creates a low-pressure region under the car, the inlet geometry, and how it feeds the diffuser. Include ride height sensitivity findings.</p>
+          <div class="spec-tags">
+            <span class="spec-tag">Ride height: 00 mm</span>
+            <span class="spec-tag">Width: 000 mm</span>
+            <span class="spec-tag">Add spec</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-block reverse fade-in">
+        <div class="detail-img"><span class="placeholder-label">Diffuser Expansion</span></div>
+        <div class="detail-info">
+          <span class="detail-tag">Pressure Recovery</span>
+          <h3 class="detail-title">Diffuser Expansion</h3>
+          <p class="detail-desc">Explain the expansion angle chosen, how it was limited to avoid flow separation, and the length of the diffuser. Describe any sensitivity to yaw or pitch angle.</p>
+          <div class="spec-tags">
+            <span class="spec-tag">Expansion angle: 0°</span>
+            <span class="spec-tag">Length: 000 mm</span>
+            <span class="spec-tag">Add spec</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-block fade-in">
+        <div class="detail-img"><span class="placeholder-label">Strakes / Channels</span></div>
+        <div class="detail-info">
+          <span class="detail-tag">Flow Management</span>
+          <h3 class="detail-title">Strakes & Channels</h3>
+          <p class="detail-desc">Describe the strake layout — number of channels, height, and how they prevent lateral flow migration and maintain attached flow across the diffuser width.</p>
+          <div class="spec-tags">
+            <span class="spec-tag">Channels: 0</span>
+            <span class="spec-tag">Strake height: 0 mm</span>
+            <span class="spec-tag">Add spec</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="cfd">
+    <div class="container">
+      <div class="section-heading fade-in"><h2>CFD & Simulation</h2></div>
+      <div class="cfd-grid">
+        <figure class="cfd-item fade-in">
+          <div class="cfd-img"><span class="placeholder-label">CFD Image</span></div>
+          <figcaption class="cfd-caption"><strong>Underfloor Pressure</strong>Low-pressure region under the flat bottom and pressure recovery through the diffuser.</figcaption>
+        </figure>
+        <figure class="cfd-item fade-in">
+          <div class="cfd-img"><span class="placeholder-label">CFD Image</span></div>
+          <figcaption class="cfd-caption"><strong>Velocity — Underfloor Section</strong>Flow acceleration under the car and deceleration through the diffuser.</figcaption>
+        </figure>
+        <figure class="cfd-item fade-in">
+          <div class="cfd-img"><span class="placeholder-label">CFD Image</span></div>
+          <figcaption class="cfd-caption"><strong>Ride Height Sensitivity</strong>Cl vs ride height sweep — showing the operating window and suction loss at low heights.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="container">
+      <div class="section-heading fade-in"><h2>Design Process</h2></div>
+      <div class="process-list">
+        <div class="process-item fade-in"><span class="process-num">01</span><div><div class="process-title">Ground Clearance Study</div><p class="process-desc">Determined the operating ride height range in collaboration with the suspension team, balancing aero performance and ground clearance.</p></div></div>
+        <div class="process-item fade-in"><span class="process-num">02</span><div><div class="process-title">2D Diffuser Parametric Study</div><p class="process-desc">Swept expansion angle and length in 2D CFD to find the maximum angle before separation onset at the target ride height.</p></div></div>
+        <div class="process-item fade-in"><span class="process-num">03</span><div><div class="process-title">3D CAD & Strake Layout</div><p class="process-desc">Full 3D geometry in [CAD Software]. Strake positions iterated to maximise uniform flow across the diffuser width.</p></div></div>
+        <div class="process-item fade-in"><span class="process-num">04</span><div><div class="process-title">Full-Car CFD</div><p class="process-desc">Simulated as part of the full car to capture interaction with front wing outwash and rear wake. Ride height sensitivity sweep performed.</p></div></div>
+        <div class="process-item fade-in"><span class="process-num">05</span><div><div class="process-title">Manufacturing</div><p class="process-desc">Manufactured using [method]. Sealed to the chassis to prevent leakage flow that would reduce ground effect performance.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="part-nav fade-in">
+      <a href="../rearwing/index.html">← Rear Wing</a>
+      <a href="../index.html">Aero Overview →</a>
+    </div>
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const siblings = [...entry.target.parentElement.querySelectorAll('.fade-in')];
+          setTimeout(() => entry.target.classList.add('visible'), siblings.indexOf(entry.target) * 60);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

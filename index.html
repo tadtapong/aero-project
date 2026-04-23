@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aerodynamics — Formula Student</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="aero.css">
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <span class="nav-logo">Your Name</span>
+      <div class="nav-links">
+      <a href="#">← Portfolio</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="container">
+      <p class="hero-label fade-in">Formula Student · Aerodynamics</p>
+      <h1 class="hero-title fade-in">Aero Package<br><em>Design & Analysis</em></h1>
+      <p class="hero-desc fade-in">
+        Designed the full aerodynamic package for [Team Name]'s Formula Student car,
+        targeting maximum downforce within the ruleset while minimising drag penalty.
+        All parts were designed in [CAD Software] and validated with CFD in [Software].
+      </p>
+      <div class="hero-image fade-in">
+        <!-- <img src="images/car-hero.jpg" alt="Full car render"> -->
+        <span class="placeholder-label">Full Car / Package Image</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY STATS — update with your real numbers -->
+  <div class="container">
+    <div class="stats-bar fade-in">
+      <div class="stat"><div class="stat-value">−0.00</div><div class="stat-label">Lift Coefficient (Cl)</div></div>
+      <div class="stat"><div class="stat-value">0.00</div><div class="stat-label">Drag Coefficient (Cd)</div></div>
+      <div class="stat"><div class="stat-value">0.0</div><div class="stat-label">Cl / Cd Ratio</div></div>
+      <div class="stat"><div class="stat-value">000 N</div><div class="stat-label">Downforce @ 60 km/h</div></div>
+    </div>
+  </div>
+
+  <!-- PARTS — copy a .part-card block to add more -->
+  <section id="parts">
+    <div class="container">
+      <div class="section-heading fade-in"><h2>Components</h2></div>
+      <div class="parts-grid">
+
+        <article class="part-card fade-in" onclick="location.href='frontwing/index.html'">
+          <div class="part-thumb"><span class="placeholder-label">Front Wing</span></div>
+          <div class="part-body">
+            <span class="part-tag">Downforce</span>
+            <h3 class="part-title">Front Wing</h3>
+            <p class="part-desc">Multi-element front wing designed for high downforce with controlled drag. Endplates tuned to manage tyre wake.</p>
+            <div class="part-footer">
+              <span>Cl = −0.00 · Cd = 0.00</span>
+              <a class="part-link" href="frontwing/index.html">View →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="part-card fade-in" onclick="location.href='rearwing/index.html'">
+          <div class="part-thumb"><span class="placeholder-label">Rear Wing</span></div>
+          <div class="part-body">
+            <span class="part-tag">Downforce</span>
+            <h3 class="part-title">Rear Wing</h3>
+            <p class="part-desc">Two-element rear wing with swan-neck mounting. Angle of attack optimised for the target aero balance.</p>
+            <div class="part-footer">
+              <span>Cl = −0.00 · Cd = 0.00</span>
+              <a class="part-link" href="rearwing/index.html">View →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="part-card fade-in" onclick="location.href='diffuser/index.html'">
+          <div class="part-thumb"><span class="placeholder-label">Diffuser</span></div>
+          <div class="part-body">
+            <span class="part-tag">Ground Effect</span>
+            <h3 class="part-title">Undertray & Diffuser</h3>
+            <p class="part-desc">Flat-bottom undertray with a multi-channel diffuser. Expansion angle and strake layout optimised via CFD.</p>
+            <div class="part-footer">
+              <span>Cl = −0.00 · Cd = 0.00</span>
+              <a class="part-link" href="diffuser/index.html">View →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="back-section fade-in">
+      <a class="back-link" href="#">← Back to portfolio</a>
+    </div>
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const siblings = [...entry.target.parentElement.querySelectorAll('.fade-in')];
+          setTimeout(() => entry.target.classList.add('visible'), siblings.indexOf(entry.target) * 60);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

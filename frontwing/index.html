@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Front Wing — Aero · Formula Student</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../theme.css">
+  <link rel="stylesheet" href="../aero.css">
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <span class="nav-logo">Your Name</span>
+      <div class="nav-links">
+        <a href="../index.html">← Aero Overview</a>
+        <a href="#">Portfolio</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="container">
+      <p class="breadcrumb fade-in"><a href="#">Portfolio</a> / <a href="../index.html">Aerodynamics</a> / Front Wing</p>
+      <h1 class="hero-title fade-in">Front Wing<br><em>Design & Analysis</em></h1>
+      <p class="hero-desc fade-in">
+        Describe the overall goal of the front wing — what downforce target it needed to hit,
+        how it fits into the overall aero balance, and any key design constraints from the ruleset.
+      </p>
+      <div class="hero-image fade-in">
+        <!-- <img src="../images/frontwing-hero.jpg" alt="Front Wing"> -->
+        <span class="placeholder-label">Front Wing — Hero Image / Render</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="stats-bar fade-in">
+      <div class="stat"><div class="stat-value">−0.00</div><div class="stat-label">Lift Coeff. (Cl)</div></div>
+      <div class="stat"><div class="stat-value">0.00</div><div class="stat-label">Drag Coeff. (Cd)</div></div>
+      <div class="stat"><div class="stat-value">0.0</div><div class="stat-label">Cl / Cd</div></div>
+      <div class="stat"><div class="stat-value">000 N</div><div class="stat-label">Downforce @ 60 km/h</div></div>
+    </div>
+  </div>
+
+  <!-- DESIGN DETAILS — add class "reverse" to alternate image side -->
+  <section id="details">
+    <div class="container">
+      <div class="section-heading fade-in"><h2>Design Details</h2></div>
+    </div>
+    <div class="container" style="padding-left:0;padding-right:0;max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:1.5px;">
+
+      <div class="detail-block fade-in">
+        <div class="detail-img"><span class="placeholder-label">Main Plane</span></div>
+        <div class="detail-info">
+          <span class="detail-tag">Profile</span>
+          <h3 class="detail-title">Main Plane</h3>
+          <p class="detail-desc">Describe the airfoil profile chosen, chord length, and span. Explain why this profile was selected — Cl/Cd at the operating Re number, stall characteristics, etc.</p>
+          <div class="spec-tags">
+            <span class="spec-tag">Profile: NACA XXXX</span>
+            <span class="spec-tag">Chord: 000 mm</span>
+            <span class="spec-tag">Span: 000 mm</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-block reverse fade-in">
+        <div class="detail-img"><span class="placeholder-label">Flap</span></div>
+        <div class="detail-info">
+          <span class="detail-tag">Multi-element</span>
+          <h3 class="detail-title">Flap</h3>
+          <p class="detail-desc">Describe the flap element — gap and overlap settings, angle of attack, and how it was tuned to increase circulation without causing separation.</p>
+          <div class="spec-tags">
+            <span class="spec-tag">AoA: 0°</span>
+            <span class="spec-tag">Gap: 0 mm</span>
+            <span class="spec-tag">Overlap: 0 mm</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-block fade-in">
+        <div class="detail-img"><span class="placeholder-label">Endplate</span></div>
+        <div class="detail-info">
+          <span class="detail-tag">Endplate</span>
+          <h3 class="detail-title">Endplate Design</h3>
+          <p class="detail-desc">Explain the endplate geometry — how it reduces tip vortex losses, manages tyre wake interaction, and any cascades or turning vanes used.</p>
+          <div class="spec-tags"><span class="spec-tag">Add spec</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="cfd">
+    <div class="container">
+      <div class="section-heading fade-in"><h2>CFD & Simulation</h2></div>
+      <div class="cfd-grid">
+        <figure class="cfd-item fade-in">
+          <div class="cfd-img"><span class="placeholder-label">CFD Image</span></div>
+          <figcaption class="cfd-caption"><strong>Pressure Distribution</strong>Key observation about the pressure map — suction peak location, separation risk, etc.</figcaption>
+        </figure>
+        <figure class="cfd-item fade-in">
+          <div class="cfd-img"><span class="placeholder-label">CFD Image</span></div>
+          <figcaption class="cfd-caption"><strong>Streamlines — Top View</strong>Note about flow attachment, vortex structures, or wake behaviour.</figcaption>
+        </figure>
+        <figure class="cfd-item fade-in">
+          <div class="cfd-img"><span class="placeholder-label">CFD Image</span></div>
+          <figcaption class="cfd-caption"><strong>Tip Vortex</strong>Describe the vortex strength and how the endplate mitigates induced drag.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="container">
+      <div class="section-heading fade-in"><h2>Design Process</h2></div>
+      <div class="process-list">
+        <div class="process-item fade-in"><span class="process-num">01</span><div><div class="process-title">Target Setting</div><p class="process-desc">Define downforce and drag targets based on vehicle dynamics requirements and aero balance goals.</p></div></div>
+        <div class="process-item fade-in"><span class="process-num">02</span><div><div class="process-title">2D Profile Analysis</div><p class="process-desc">Shortlisted airfoil profiles using XFOIL. Evaluated Cl/Cd across the operating Reynolds number range (~200k–500k).</p></div></div>
+        <div class="process-item fade-in"><span class="process-num">03</span><div><div class="process-title">3D CAD</div><p class="process-desc">Full 3D geometry built in [CAD Software]. Iterated on element angles, chord, span, and endplate shape.</p></div></div>
+        <div class="process-item fade-in"><span class="process-num">04</span><div><div class="process-title">CFD Validation</div><p class="process-desc">Steady-state RANS (k-ω SST) in [Software]. Mesh independence study performed. Results validated against 2D predictions.</p></div></div>
+        <div class="process-item fade-in"><span class="process-num">05</span><div><div class="process-title">Manufacturing</div><p class="process-desc">Manufactured using [method — e.g. carbon fibre wet layup over foam core]. Final weight: 0.0 kg.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="part-nav fade-in">
+      <a href="../index.html">← Aero Overview</a>
+      <a href="../rearwing/index.html">Rear Wing →</a>
+    </div>
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const siblings = [...entry.target.parentElement.querySelectorAll('.fade-in')];
+          setTimeout(() => entry.target.classList.add('visible'), siblings.indexOf(entry.target) * 60);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

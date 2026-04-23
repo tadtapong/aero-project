@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rear Wing — Aero · Formula Student</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../theme.css">
+  <link rel="stylesheet" href="../aero.css">
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <span class="nav-logo">Your Name</span>
+      <div class="nav-links">
+        <a href="../index.html">← Aero Overview</a>
+        <a href="#">Portfolio</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="container">
+      <p class="breadcrumb fade-in"><a href="#">Portfolio</a> / <a href="../index.html">Aerodynamics</a> / Rear Wing</p>
+      <h1 class="hero-title fade-in">Rear Wing<br><em>Design & Analysis</em></h1>
+      <p class="hero-desc fade-in">
+        Describe the rear wing's role in the aero package — how much of the total downforce
+        it contributes, the target aero balance (front/rear %), and any packaging constraints
+        from the ruleset or chassis.
+      </p>
+      <div class="hero-image fade-in">
+        <!-- <img src="../images/rearwing-hero.jpg" alt="Rear Wing"> -->
+        <span class="placeholder-label">Rear Wing — Hero Image / Render</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="stats-bar fade-in">
+      <div class="stat"><div class="stat-value">−0.00</div><div class="stat-label">Lift Coeff. (Cl)</div></div>
+      <div class="stat"><div class="stat-value">0.00</div><div class="stat-label">Drag Coeff. (Cd)</div></div>
+      <div class="stat"><div class="stat-value">0.0</div><div class="stat-label">Cl / Cd</div></div>
+      <div class="stat"><div class="stat-value">000 N</div><div class="stat-label">Downforce @ 60 km/h</div></div>
+    </div>
+  </div>
+
+  <section id="details">
+    <div class="container">
+      <div class="section-heading fade-in"><h2>Design Details</h2></div>
+    </div>
+    <div class="container" style="padding-left:0;padding-right:0;max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:1.5px;">
+
+      <div class="detail-block fade-in">
+        <div class="detail-img"><span class="placeholder-label">Main Plane</span></div>
+        <div class="detail-info">
+          <span class="detail-tag">Profile</span>
+          <h3 class="detail-title">Main Plane</h3>
+          <p class="detail-desc">Describe the main plane profile, chord, and span. Explain the angle of attack chosen and how it was balanced against drag penalty.</p>
+          <div class="spec-tags">
+            <span class="spec-tag">Profile: NACA XXXX</span>
+            <span class="spec-tag">Chord: 000 mm</span>
+            <span class="spec-tag">AoA: 0°</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-block reverse fade-in">
+        <div class="detail-img"><span class="placeholder-label">Flap</span></div>
+        <div class="detail-info">
+          <span class="detail-tag">Multi-element</span>
+          <h3 class="detail-title">Flap</h3>
+          <p class="detail-desc">Describe the flap — gap/overlap optimisation, angle, and how it increases the effective camber of the rear wing system.</p>
+          <div class="spec-tags">
+            <span class="spec-tag">AoA: 0°</span>
+            <span class="spec-tag">Gap: 0 mm</span>
+            <span class="spec-tag">Overlap: 0 mm</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-block fade-in">
+        <div class="detail-img"><span class="placeholder-label">Mounting / Endplate</span></div>
+        <div class="detail-info">
+          <span class="detail-tag">Structure</span>
+          <h3 class="detail-title">Swan-Neck Mounting</h3>
+          <p class="detail-desc">Explain the mounting strategy — swan-neck vs conventional, how it avoids interference with the suction surface, and the structural load path.</p>
+          <div class="spec-tags"><span class="spec-tag">Add spec</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="cfd">
+    <div class="container">
+      <div class="section-heading fade-in"><h2>CFD & Simulation</h2></div>
+      <div class="cfd-grid">
+        <figure class="cfd-item fade-in">
+          <div class="cfd-img"><span class="placeholder-label">CFD Image</span></div>
+          <figcaption class="cfd-caption"><strong>Pressure Distribution</strong>Key observation about suction peak, stall margin, or pressure recovery.</figcaption>
+        </figure>
+        <figure class="cfd-item fade-in">
+          <div class="cfd-img"><span class="placeholder-label">CFD Image</span></div>
+          <figcaption class="cfd-caption"><strong>Wake Profile</strong>Note about wake width, velocity deficit, and impact on downstream flow.</figcaption>
+        </figure>
+        <figure class="cfd-item fade-in">
+          <div class="cfd-img"><span class="placeholder-label">CFD Image</span></div>
+          <figcaption class="cfd-caption"><strong>Angle of Attack Sweep</strong>Cl and Cd vs AoA — showing the chosen operating point.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="container">
+      <div class="section-heading fade-in"><h2>Design Process</h2></div>
+      <div class="process-list">
+        <div class="process-item fade-in"><span class="process-num">01</span><div><div class="process-title">Aero Balance Target</div><p class="process-desc">Set rear downforce target based on the overall front/rear balance required by the vehicle dynamics team.</p></div></div>
+        <div class="process-item fade-in"><span class="process-num">02</span><div><div class="process-title">Profile & Multi-element Study</div><p class="process-desc">2D XFOIL analysis of candidate profiles. Evaluated single vs two-element configurations for the target Cl.</p></div></div>
+        <div class="process-item fade-in"><span class="process-num">03</span><div><div class="process-title">3D CAD & Packaging</div><p class="process-desc">Modelled in [CAD Software] within the ruleset envelope. Mounting geometry designed to avoid suction surface interference.</p></div></div>
+        <div class="process-item fade-in"><span class="process-num">04</span><div><div class="process-title">CFD Validation</div><p class="process-desc">RANS simulation with k-ω SST. Angle of attack sweep performed to confirm operating point and stall margin.</p></div></div>
+        <div class="process-item fade-in"><span class="process-num">05</span><div><div class="process-title">Manufacturing</div><p class="process-desc">Manufactured using [method]. Structural analysis performed for the mounting loads at maximum downforce condition.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="part-nav fade-in">
+      <a href="../frontwing/index.html">← Front Wing</a>
+      <a href="../diffuser/index.html">Diffuser →</a>
+    </div>
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const siblings = [...entry.target.parentElement.querySelectorAll('.fade-in')];
+          setTimeout(() => entry.target.classList.add('visible'), siblings.indexOf(entry.target) * 60);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
