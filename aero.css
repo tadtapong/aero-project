@@ -125,6 +125,8 @@
   flex-direction: column;
   cursor: pointer;
   transition: background var(--transition);
+  color: inherit;
+  text-decoration: none;
 }
 .part-card:hover { background: var(--surface); }
 .part-thumb {
